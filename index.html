@@ -12,15 +12,6 @@
     <link rel="shortcut icon" href="love.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" sizes="128x128" href="love.ico" type="image/png"/>
     <link type="text/css" rel="stylesheet" href="css/default.css">
-    <style>
-    div{
-        min-width:320px;
-        max-width:760px;
-        height:300px;
-<!--        border:1px solid blue;-->
-
-    }
-    </style>
 </head>
 <body>
 <!--<audio autoplay="autopaly">-->
@@ -40,19 +31,19 @@
         <div id="text">
             <div id="code">
                 <span class="say">For 小红</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
                 <span class="say">想和你一起去看春夏秋冬</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
                 <span class="say">驻足在长满青苔的石阶</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
                 <span class="say">和刚刚下过雨的小路</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
                 <span class="say">看尽了世间有无就养一只猫</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
                 <span class="say">猫是你的</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
                 <span class="say">我也是你的</span><br>
-                <span class="say"> </span><br><br>
+                <span class="say"> </span><br>
 
                 <span class="say"><span class="space"></span>——From 小李</span>
             </div>
@@ -207,7 +198,7 @@
                     tree.ctx.clearRect(0, 0, width, height);
                     tree.jump();
                     foot.draw();
-                    $await(Jscex.Async.sleep(25));
+                    $await(Jscex.Async.sleep(15));
                 }
             }));
     
@@ -244,24 +235,20 @@
         })();
 
 
-
-
 </script>
 
 <script type="text/javascript">
-        var phoneWidth =  parseInt(window.screen.width);
-        var phoneScale = phoneWidth/640;
-        var ua = navigator.userAgent;
-        if (/Android (\d+\.\d+)/.test(ua)){
-            var version = parseFloat(RegExp.$1);
-            if(version>2.3){
-                document.write('&lt;meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-            }else{
-                document.write('&lt;meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
-            }
-        } else {document.write('&lt;meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');}
+(function (doc, win) {
+var docEl = doc.documentElement ,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'recalc = function () f
+var clientWidth = docEl.clientwidth:
+if (!clientWidth) return;
+docEl,style,fontSize = 20 * (clientwidth / 320) + px;//其中“20"根据你设置的html的font-size属性值做适当的变
+if (!doc.addEventListener) return;
+win.addEventListener(resizeEvt,recalc，false);
+doc.addEventListener("DOMContentLoaded',recalc，false);
+1)(document,window);
 </script>
-
 
 </body>
 </html>
